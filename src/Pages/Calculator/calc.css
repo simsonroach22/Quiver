@@ -1,0 +1,68 @@
+/* Reset some default styles */
+
+/* Main container styling */
+.cal-container-main {
+    height: 100vh; /* Full viewport height */
+    width: 100vw; /* Full viewport width */
+    background-color: #2f074c; /* Full black background */
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+
+/* Calculator container */
+.calculator {
+    margin: auto;
+    width: 300px;
+    background-color: #333;
+    border-radius: 8px;
+
+    box-shadow: -60px 40px 60px rgba(0, 0, 0, 0.2);
+}
+
+/* Display area */
+.display {
+    background-color: #444;
+    color: white;
+    font-size: 2rem;
+    padding: 15px;
+    text-align: right;
+    overflow: hidden;
+    word-wrap: break-word;
+}
+
+/* Buttons grid */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+}
+
+/* Button styles */
+button {
+    background-color: #888;
+    color: white;
+    border: none;
+    font-size: 1.5rem;
+    padding: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #555;
+}
+
+/* Clear and equals button styling */
+.span-two {
+    grid-column: span 2;
+}
+
+/* Responsive styling */
+@media (max-width: 400px) {
+    .calculator {
+        width: 90%;
+    }
+}
